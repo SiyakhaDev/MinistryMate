@@ -3,15 +3,16 @@
 h2{
   color: black;
 }
+/* Dashboard.css */
 .dashboard-container {
   display: flex;
   min-height: 100vh;
-  width: 100%; /* Ensure it takes the full width */
+  width: 100%; /* Ensure the container takes up full width */
 }
 
 .sidebar {
   background-color: #333;
-  width: 150px;
+  width: 120px; /* Sidebar width set to 120px */
   color: white;
   padding: 20px;
   position: fixed;
@@ -39,11 +40,12 @@ h2{
 }
 
 .main-content {
-  margin-left: 250px; /* Allow for sidebar width */
+  margin-left: 120px; /* Offset content by sidebar width */
   padding: 20px;
-  width: calc(100% - 250px); /* Subtract sidebar width */
+  width: calc(100% - 120px); /* Fill the remaining width after the sidebar */
   background-color: #f3f8ff;
   overflow-x: hidden; /* Prevent horizontal overflow */
+  flex-grow: 1; /* Ensure the content grows to fill available space */
 }
 
 header {
@@ -104,7 +106,7 @@ table {
 table th, table td {
   padding: 15px;
   text-align: left;
-  border: 1px solid #636262;
+  border: 1px solid #ddd;
 }
 
 table th {
@@ -113,7 +115,7 @@ table th {
 
 button {
   background-color: #007bff;
-  color: black;
+  color: white;
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
