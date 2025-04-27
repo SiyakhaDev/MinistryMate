@@ -1,6 +1,6 @@
 /* Dashboard.css */
 
-h2{
+h2, h3, h4, p, span, table th{
   color: black;
 }
 /* Dashboard.css */
@@ -40,7 +40,7 @@ h2{
 }
 
 .main-content {
-  margin-left: 120px; /* Offset content by sidebar width */
+  margin-left: 160px; /* Offset content by sidebar width */
   padding: 20px;
   width: calc(100% - 120px); /* Fill the remaining width after the sidebar */
   background-color: #f3f8ff;
@@ -53,6 +53,9 @@ header {
   padding: 15px;
   color: white;
   text-align: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
 }
 
 .stats-section {
