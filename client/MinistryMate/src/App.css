@@ -1,42 +1,167 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f8ff; /* Soft blue background */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #7fb5e9; /* Soft blue header */
+  padding: 20px;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dashboard-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Welcome Section */
+.welcome-section {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-section p {
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.card {
-  padding: 2em;
+.stat-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin-right: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.stat-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff; /* Blue color for the counter */
+}
+
+/* Updates Section */
+.updates, .alerts {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.update, .alert {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.update h4, .alert p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+  margin-top: 40px;
+}
+
+.event {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+table th {
+  background-color: #f4f6f9;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded button */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
