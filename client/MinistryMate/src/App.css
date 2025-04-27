@@ -1,9 +1,15 @@
 /* Dashboard.css */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Viewport width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
-h2, h3, h4, p, span, table th{
+h2, h3, h4, p, span, table th, table td{
   color: black;
 }
-/* Dashboard.css */
+
 .dashboard-container {
   display: flex;
   min-height: 100vh;
